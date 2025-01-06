@@ -148,8 +148,7 @@
                                     class="heading-style-large">Talk</h1></div></div><div
                             class="form-wrapper w-form"><form id="contact-form"
                                 name="wf-form-Contact-Form"
-                                data-name="Contact Form" method="get"
-                                class="form"
+                                data-name="Contact Form" action="https://api.web3forms.com/submit" method="POST" class="form"
                                 data-wf-page-id="677a63dbafc0ef4f9d60a78b"
                                 data-wf-element-id="d274fb9c-d26c-6636-bba3-00aab05ea20c"><div
                                     class="form-row-1-2"><div
@@ -161,7 +160,10 @@
                                             placeholder="Your Name" type="text"
                                             id="Contact-Name-2"
                                             required /></div><div
-                                        class="form-field-wrapper"><input
+                                        class="form-field-wrapper">
+<input type="hidden" name="access_key" value="8d565fb0-b23e-40d7-a727-f22900af7fd8">
+
+<input
                                             class="form-input w-input"
                                             maxlength="256"
                                             name="Contact-Email-2"
