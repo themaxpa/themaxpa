@@ -1,6 +1,9 @@
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     font-family: sans-serif;
   }
   
@@ -113,6 +116,11 @@ html {
   
   button, html input[type="button"], input[type="reset"] {
     -webkit-appearance: button;
+    appearance: button;
+    appearance: button;
+    appearance: button;
+    appearance: button;
+    appearance: button;
     cursor: pointer;
   }
   
@@ -140,6 +148,7 @@ html {
   
   input[type="search"] {
     -webkit-appearance: none;
+    appearance: none;
   }
   
   input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
@@ -176,7 +185,6 @@ html {
   }
   
   [class^="w-icon-"], [class*=" w-icon-"] {
-    speak: none;
     font-variant: normal;
     text-transform: none;
     -webkit-font-smoothing: antialiased;
@@ -230,7 +238,6 @@ html {
   }
   
   img {
-    vertical-align: middle;
     max-width: 100%;
     display: inline-block;
   }
@@ -276,6 +283,7 @@ html {
   
   input.w-button {
     -webkit-appearance: button;
+    appearance: button;
   }
   
   html[data-w-dynpage] [data-w-cloak] {
@@ -479,6 +487,7 @@ html {
   button, [type="button"], [type="reset"] {
     cursor: pointer;
     -webkit-appearance: button;
+    appearance: button;
     border: 0;
   }
   
@@ -508,7 +517,7 @@ html {
   
   .w-input, .w-select {
     color: #333;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     background-color: #fff;
     border: 1px solid #ccc;
     width: 100%;
@@ -1032,6 +1041,8 @@ html {
     pointer-events: none;
     -webkit-user-select: none;
     user-select: none;
+    user-select: none;
+    user-select: none;
   }
   
   .w-widget-twitter-count-shim .w-widget-twitter-count-inner {
@@ -1182,7 +1193,7 @@ html {
     text-align: center;
     clear: both;
     -webkit-tap-highlight-color: #0000;
-    tap-highlight-color: #0000;
+    /* tap-highlight-color: #0000; */
     background: #ddd;
     height: 300px;
     position: relative;
@@ -1213,7 +1224,7 @@ html {
     z-index: 2;
     text-align: center;
     -webkit-tap-highlight-color: #0000;
-    tap-highlight-color: #0000;
+    /* tap-highlight-color: #0000; */
     height: 40px;
     margin: auto;
     padding-top: 10px;
@@ -1277,7 +1288,7 @@ html {
     cursor: pointer;
     color: #fff;
     -webkit-tap-highlight-color: #0000;
-    tap-highlight-color: #0000;
+    /* tap-highlight-color: #0000; */
     -webkit-user-select: none;
     user-select: none;
     width: 80px;
@@ -1431,10 +1442,10 @@ html {
     position: fixed;
     inset: 0;
     -webkit-transform: translate(0);
+    transform: translate(0);
   }
   
   .w-lightbox-backdrop, .w-lightbox-container {
-    -webkit-overflow-scrolling: touch;
     height: 100%;
     overflow: auto;
   }
@@ -2472,7 +2483,6 @@ html {
   }
   
   .w-commerce-commercecartlist {
-    -webkit-overflow-scrolling: touch;
     flex: 1;
     padding: 12px 24px;
     overflow: auto;
@@ -7725,7 +7735,7 @@ html {
     .footer {
       grid-column-gap: 3rem;
       grid-row-gap: 3rem;
-      min-height: auto;
+      min-height: 0;
       padding: 4rem 4rem 2rem;
     }
   
@@ -9498,3 +9508,20 @@ html {
     font-style: italic;
     font-display: swap;
   }
+
+  
+  .transform-style {
+    -webkit-transform: translate3d(0, 105%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+    -moz-transform: translate3d(0, 105%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+    -ms-transform: translate3d(0, 105%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+    transform: translate3d(0, 105%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+}
+
+/* Add this at the end of the file */
+.about-us {
+  -webkit-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+  -moz-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+  -ms-transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+  transform: translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+  opacity: 0;
+}
